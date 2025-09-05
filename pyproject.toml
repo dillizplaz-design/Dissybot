@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bot-moderator"
+version = "0.1.0"
+description = "Discord moderation bot - production scaffold"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord.py = "^2.3"
+aiosqlite = "^0.18.0"
+asyncpg = {version="^0.27.0", optional=true}
+sqlalchemy = "^1.4"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.extras]
+postgres = ["asyncpg"]
+
+[tool.ruff]
+line-length = 88
